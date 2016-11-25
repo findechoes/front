@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 70px 0 0 0;
+}
+
+a:focus {
+  outline: none;
+}
+
+
+.container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#place-picker-map {
+  height: 100%;
+}

@@ -1,3 +1,19 @@
 <template>
-  <h1>${message}</h1>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="./style.css"></require>
+  <require from="./spot-list"></require>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-user"></i>
+        <span>Find Echoes</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+      <!--      <spot-list class="col-md-4"></spot-list>-->
+      <router-view class="col-md-8"></router-view>
+  </div>
 </template>
