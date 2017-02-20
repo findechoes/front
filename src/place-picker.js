@@ -14,6 +14,7 @@ export class PlacePicker {
     // This loads the Google Maps API asynchronously.
     console.log('attached');
     let mapContainer = document.getElementById('place-picker-map');
+    let input = document.getElementById('input-autocomplete');
     let tokyo = {lat: 35.68944, lng: 139.69167};
     let mapOpts = {
       center: tokyo,
@@ -24,8 +25,8 @@ export class PlacePicker {
       types: ['store']
     };
 
-    console.log(this.maps);
-    let map = this.maps.initMap(mapContainer, mapOpts, srchOpts);
+    console.log(tokyo);
+    this.maps.initMap(mapContainer, input, mapOpts, srchOpts, tokyo);
   }
 }
 
